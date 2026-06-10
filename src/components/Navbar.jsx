@@ -16,9 +16,8 @@ const Navbar = () => {
           <li key={item.name} className="flex items-center relative">
             <NavLink
               to={item.path}
-              className={({ isActive }) => 
-                `text-[1.1rem] font-medium transition-colors duration-300 tracking-wide hover:text-black ${
-                  isActive ? 'text-black' : 'text-[#737373]'
+              className={({ isActive }) =>
+                `text-[1.1rem] font-medium transition-colors duration-300 tracking-wide hover:text-black ${isActive ? 'text-black' : 'text-[#737373]'
                 }`
               }
             >
