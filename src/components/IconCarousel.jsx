@@ -24,21 +24,21 @@ const IconCarousel = () => {
   const duplicatedIcons = [...icons, ...icons];
 
   return (
-    <div className="max-w-4xl mx-auto px-6 py-12 overflow-hidden relative">
+    <div className="max-w-4xl mx-auto px-6 py-8 md:py-12 overflow-hidden relative">
       {/* Left Blur Overlay */}
-      <div className="absolute left-0 top-0 bottom-0 w-36 bg-gradient-to-r from-[#fafafa] to-transparent z-10 pointer-events-none"></div>
+      <div className="absolute left-0 top-0 bottom-0 w-12 sm:w-20 md:w-36 bg-gradient-to-r from-[#fafafa] to-transparent z-10 pointer-events-none"></div>
 
       {/* Right Blur Overlay */}
-      <div className="absolute right-0 top-0 bottom-0 w-36 bg-gradient-to-l from-[#fafafa] to-transparent z-10 pointer-events-none"></div>
+      <div className="absolute right-0 top-0 bottom-0 w-12 sm:w-20 md:w-36 bg-gradient-to-l from-[#fafafa] to-transparent z-10 pointer-events-none"></div>
 
       {/* Scrolling Container */}
-      <div className="flex w-max animate-scroll gap-16 md:gap-24 items-center pr-16 md:pr-24">
+      <div className="flex w-max animate-scroll gap-10 md:gap-24 items-center pr-10 md:pr-24">
         {duplicatedIcons.map((icon, idx) => (
           <div key={idx} className="flex-shrink-0">
             <img
               src={icon.src}
               alt={icon.alt}
-              className="h-14 md:h-16 object-contain opacity-80 hover:opacity-100 transition-opacity duration-300"
+              className="h-10 md:h-16 object-contain opacity-80 hover:opacity-100 transition-opacity duration-300"
             />
           </div>
         ))}

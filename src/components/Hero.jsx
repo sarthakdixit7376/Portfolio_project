@@ -12,13 +12,13 @@ const Hero = () => {
           <img
             src={meImg}
             alt="Sarthak Dixit"
-            className="w-64 h-64 md:w-80 md:h-80 rounded-full object-cover shadow-xl grayscale-[20%] hover:grayscale-0 transition-all duration-500"
+            className="w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 rounded-full object-cover shadow-xl grayscale-[20%] hover:grayscale-0 transition-all duration-500"
           />
         </div>
 
         {/* Right Column: Hero Content */}
-        <div className="flex-col text-left max-w-xl">
-          <h1 className="text-5xl md:text-6xl font-semibold tracking-tight text-[#1a1a1a]">
+        <div className="flex flex-col items-center md:items-start text-center md:text-left max-w-xl">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-[#1a1a1a]">
             Sarthak Dixit
           </h1>
 
@@ -27,7 +27,7 @@ const Hero = () => {
           </p>
 
           {/* Social Icons */}
-          <div className="flex items-center gap-3 mt-4">
+          <div className="flex items-center justify-center md:justify-start gap-3 mt-4">
             {/* GitHub */}
             <a
               href="https://github.com/sarthakdixit7376"

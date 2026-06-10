@@ -6,7 +6,7 @@ const Resume = () => {
   const fileId = "1tI3iEZL7OzoWIT_mdyTSRj2H7cE84q1t"
 
   const previewUrl = fileId ? `https://drive.google.com/file/d/${fileId}/preview` : null;
-  const downloadUrl = fileId ? `https://drive.google.com/uc?export=download&id=${fileId}` : GDRIVE_URL;
+  const downloadUrl = fileId ? `https://drive.google.com/uc?export=download&id=${fileId}` : '#';
 
   return (
     <div className="max-w-5xl mx-auto px-6 py-12 md:py-20 text-left">

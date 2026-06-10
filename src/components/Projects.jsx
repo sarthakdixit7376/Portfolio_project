@@ -30,34 +30,25 @@ const Projects = () => {
 
   return (
     <div className="max-w-4xl mx-auto px-6 py-12">
-      <h2 className="text-4xl font-semibold tracking-tight text-[#1a1a1a] mb-10 text-left">
+      <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-[#1a1a1a] mb-10 text-center md:text-left">
         Projects
       </h2>
 
       <div className="space-y-16">
         {projectsData.map((project) => (
-          <div key={project.id} className="flex flex-col md:flex-row gap-8 md:gap-12 items-start md:items-center">
-            {/* Left Column: Project Image */}
-            <div className="w-full md:w-[320px] flex-shrink-0">
-              <img
-                src={project.image}
-                alt={project.title}
-                className="w-full h-auto aspect-square object-cover rounded-[32px] shadow-md border border-neutral-100"
-              />
-            </div>
-
-            {/* Right Column: Project details */}
-            <div className="flex-col text-left max-w-xl">
-              <h3 className="text-3xl font-semibold text-[#1a1a1a] tracking-tight">
+          <div key={project.id} className="flex flex-col-reverse md:flex-row gap-8 md:gap-12 items-start md:items-center">
+            {/* Left Column: Project details */}
+            <div className="flex-col text-left max-w-xl flex-grow">
+              <h3 className="text-2xl sm:text-3xl font-semibold text-[#1a1a1a] tracking-tight">
                 {project.title}
               </h3>
-              <ul className="mt-4 list-disc pl-5 space-y-2 text-[1.1rem] leading-relaxed text-[#262626] font-normal">
+              <ul className="mt-4 list-disc pl-5 space-y-2 text-[1rem] sm:text-[1.1rem] leading-relaxed text-[#262626] font-normal">
                 {project.description.map((point, index) => (
                   <li key={index}>{point}</li>
                 ))}
               </ul>
 
-              <h4 className="mt-6 text-xl font-semibold text-[#1a1a1a] tracking-tight">
+              <h4 className="mt-6 text-lg sm:text-xl font-semibold text-[#1a1a1a] tracking-tight">
                 Tech Stack
               </h4>
 
@@ -73,6 +64,15 @@ const Projects = () => {
                   </div>
                 ))}
               </div>
+            </div>
+
+            {/* Right Column: Project Image */}
+            <div className="w-full max-w-sm md:max-w-none md:w-[320px] flex-shrink-0 mx-auto md:mx-0">
+              <img
+                src={project.image}
+                alt={project.title}
+                className="w-full h-auto aspect-square object-cover rounded-[32px] shadow-md border border-neutral-100"
+              />
             </div>
           </div>
         ))}
