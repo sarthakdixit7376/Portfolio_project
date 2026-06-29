@@ -1,4 +1,5 @@
 import React from 'react';
+import { TypeAnimation } from 'react-type-animation';
 import meImg from '../assets/images/me.jpg';
 import linkedinIcon from '../assets/images/icons/linkedin.png';
 import instagramIcon from '../assets/images/icons/instagram.png';
@@ -22,8 +23,21 @@ const Hero = () => {
             Sarthak Dixit
           </h1>
 
-          <p className="text-xl md:text-2xl font-normal italic text-[#737373] mt-2 lowercase">
-            fullstack developer
+          <p className="text-xl md:text-2xl font-normal italic text-[#737373] mt-2 min-h-[36px]">
+            <TypeAnimation
+              sequence={[
+                'Fullstack Developer',
+                2000,
+                'Backend Developer',
+                2000,
+                'Engineer',
+                2000
+              ]}
+              wrapper="span"
+              speed={50}
+              repeat={Infinity}
+              cursor={true}
+            />
           </p>
 
           {/* Social Icons */}

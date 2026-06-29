@@ -27,7 +27,7 @@ const Experience = () => {
               <h3 className="text-xl font-semibold text-[#1a1a1a]">
                 {exp.company}
               </h3>
-              <p className="text-lg italic text-[#737373] mt-1 lowercase">
+              <p className="text-lg italic text-[#737373] mt-1">
                 {exp.role}
               </p>
             </div>
