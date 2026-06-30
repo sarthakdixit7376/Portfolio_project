@@ -8,6 +8,7 @@ import CustomCursor from './components/CustomCursor'
 import './App.css'
 
 
+
 function App() {
   return (
     <div className="min-h-screen bg-[#fafafa] text-[#1a1a1a]">
@@ -15,6 +16,7 @@ function App() {
       <Navbar />
       <main>
         <Routes>
+
           <Route path="/" element={<Home />} />
           <Route path="/work" element={<Work />} />
           <Route path="/projects" element={<Projects />} />

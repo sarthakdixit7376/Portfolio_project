@@ -18,8 +18,8 @@ const GithubContributions = () => {
         GitHub Contributions
       </h2>
 
-      {/* Calendar card container */}
-      <div className="bg-white border border-neutral-200/80 rounded-[32px] p-6 md:p-8 flex justify-center shadow-sm overflow-x-auto">
+      {/* Calendar container */}
+      <div className="flex justify-center overflow-x-auto py-2">
         <GitHubCalendar
           username={githubUsername}
           blockSize={12}
