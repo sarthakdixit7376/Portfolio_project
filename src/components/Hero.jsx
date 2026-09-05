@@ -1,4 +1,3 @@
-import React from 'react';
 import { TypeAnimation } from 'react-type-animation';
 import meImg from '../assets/images/me.jpg';
 import linkedinIcon from '../assets/images/icons/linkedin.png';

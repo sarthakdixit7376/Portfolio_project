@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -35,7 +35,6 @@ const IconCarousel = () => {
   ];
 
   const sliderRef = useRef(null);
-  const animationRef = useRef(null);
 
   useEffect(() => {
     const slider = sliderRef.current;
@@ -49,7 +48,7 @@ const IconCarousel = () => {
       repeat: -1
     });
 
-    animationRef.current = tl;
+
 
     // ScrollTrigger to speed up animation based on scroll velocity
     const trigger = ScrollTrigger.create({

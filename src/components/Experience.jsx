@@ -1,15 +1,6 @@
-import React from 'react';
+import { experiences } from '../data/experiences';
 
 const Experience = () => {
-  const experiences = [
-    {
-      company: 'Preva care',
-      role: 'Fullstack Intern',
-      duration: 'June 2025 - July 2025',
-      location: 'Delhi, India (Remote)'
-    }
-  ];
-
   return (
     <div className="max-w-4xl mx-auto px-6 py-12">
       <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-[#1a1a1a] mb-10 text-center md:text-left">

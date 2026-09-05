@@ -5,8 +5,6 @@ import Work from './pages/Work'
 import Projects from './pages/Projects'
 import Resume from './pages/Resume'
 import CustomCursor from './components/CustomCursor'
-import './App.css'
-
 
 
 function App() {

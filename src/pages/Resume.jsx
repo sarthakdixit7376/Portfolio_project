@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Footer from '../components/Footer';
 
 const Resume = () => {
@@ -50,20 +50,9 @@ const Resume = () => {
       {/* Resume Container */}
       <div className="relative w-full aspect-[1/1.414] min-h-[600px] md:min-h-[800px] bg-white border border-neutral-200/80 rounded-[32px] overflow-hidden shadow-sm">
         {isLoading && (
-          <>
-            <style>{`
-              @keyframes progress-bar {
-                0% { transform: translateX(-100%); }
-                100% { transform: translateX(100%); }
-              }
-              .animate-progress {
-                animation: progress-bar 1.5s infinite ease-in-out;
-              }
-            `}</style>
-            <div className="absolute top-0 left-0 w-full h-1 bg-yellow-100/50 overflow-hidden z-20">
-              <div className="h-full w-full bg-yellow-500 animate-progress" />
-            </div>
-          </>
+          <div className="absolute top-0 left-0 w-full h-1 bg-yellow-100/50 overflow-hidden z-20">
+            <div className="h-full w-full bg-yellow-500 animate-progress" />
+          </div>
         )}
 
         {previewUrl ? (

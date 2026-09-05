@@ -1,4 +1,3 @@
-import React from 'react';
 import Hero from '../components/Hero';
 import IconCarousel from '../components/IconCarousel';
 import Experience from '../components/Experience';
